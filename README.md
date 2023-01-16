@@ -16,12 +16,12 @@ This system is about sharing photos where client and server can send the photos 
 
 # Client Coding Explanation 
 1. It creates a new Socket object and connects to a server on a specific IP address and port number (9388).
-2. 3. When the "connect" button is clicked, the client creates a new Socket object and tries to connect to the specified IP address and port number.
-4. Once the connection is established, the client creates an ObjectOutputStream object to send data to the server.
-5. When the "send" button is clicked, the client opens a file chooser to select a file, reads the contents of the file into a byte array, creates a new Data object and sets the status, name, and file to send to the server.
-6. Finally, it sends the data object to the server using the output stream.
-7. The code uses the IP address and port number specified in the text field txtIp and 9388 respectively.
-8. The data sent is a file, along with its name and status.
+2. When the "connect" button is clicked, the client creates a new Socket object and tries to connect to the specified IP address and port number.
+3. Once the connection is established, the client creates an ObjectOutputStream object to send data to the server.
+4. When the "send" button is clicked, the client opens a file chooser to select a file, reads the contents of the file into a byte array, creates a new Data object and sets the status, name, and file to send to the server.
+5. Finally, it sends the data object to the server using the output stream.
+6. The code uses the IP address and port number specified in the text field txtIp and 9388 respectively.
+7. The data sent is a file, along with its name and status.
 
 # Process of exchange the photos
 1. The server creates a ServerSocket and binds it to a specific port (9388) to waiting for the connections.
